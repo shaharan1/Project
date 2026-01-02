@@ -1,0 +1,46 @@
+:root {
+    --primary-color: rgb(10, 10, 10);
+}
+
+
+.main-btn {
+
+    font-size: medium;
+    font-weight: 500;
+    color: var(--primary-color);
+    text-transform: uppercase;
+    background-color: transparent;
+    border: 1px solid var(--primary-color);
+    padding: 10px;
+    border-radius: 30px;
+    text-decoration: none;
+    line-height: 10px;
+    display: inline-block;
+    transition: all 0.3s ease-out 0s;
+
+}
+
+rooms .carousel-item {
+    transition: transform 0.8s ease-in-out;
+}
+
+.carousel-item-next.carousel-item-start,
+.carousel-item-prev.carousel-item-end {
+    transform: translateY(0);
+}
+
+.carousel-item-next,
+.active.carousel-item-start {
+    transform: translateY(100%);
+}
+
+.carousel-item-prev,
+.active.carousel-item-end {
+    transform: translateY(-100%);
+}
+
+ul,
+li {
+
+    list-style: none;
+}
