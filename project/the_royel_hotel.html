@@ -18,10 +18,10 @@
 
 </head>
 
-<body>
+<body data-bs-spy="scroll" data-bs-target=".navBar" data-bs-offset="100">
     <!-- Navbar -->
     <header>
-        <nav class="navbar glass-nav navbar-expand-lg navbar-light  fixed-top ">
+        <nav class="navbar glass-nav navbar-expand-lg navbar-light  fixed-top container">
             <div class="me-auto p-2 bd-highlight"></div>
             <div class="container-fluid">
                 <a class="navbar-brand" href="#home">
@@ -46,7 +46,7 @@
                             <a class="nav-link" href="#gallery"><strong>Gallery</strong></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link main-btn btn btn-primary rounded-pill" href="#booknow"><strong>Book
+                            <a class="nav-link main-btn btn rounded-pill" href="#booknow"><strong>Book
                                     Now</strong></a>
                         </li>
 
@@ -404,44 +404,85 @@
         <hr class="container">
         <h1 class="text-center"><strong>GALLERY</strong></h1>
 
-        <div class="row-img container">
+        <div class="row-img container ">
 
-            <div class="col-lg-4 col-md-12 p-1  mb-lg-0">
-                <img src="images/Gallery/Gallery-1.webp" class="w-100 shadow-1-strong rounded mb-2" alt="Gallery-1" />
-
-                <img src="images/Gallery/Gallery-2.webp" class="w-100 shadow-1-strong rounded mb-2" alt="Gallery-2" />
+            <div class="flip-card col-lg-4 col-md-12 p-1 mb-lg-0">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="images/Gallery/Gallery-1.webp" class="w-100 shadow-1-strong rounded mb-2"
+                            alt="Gallery-1" />
+                    </div>
+                    <div class="flip-card-back">
+                        <img src="images/Gallery/Gallery-2.webp" class="w-100 shadow-1-strong rounded mb-2"
+                            alt="Gallery-2" />
+                    </div>
+                </div>
             </div>
 
-            <div class="col-lg-4  p-1 mb-lg-0">
-                <img src="images/Gallery/Gallery-3.webp" class="w-100 shadow-1-strong rounded mb-2" alt="Gallery-3" />
-
-                <img src="images/Gallery/Gallery-4.webp" class="w-100 shadow-1-strong rounded mb-2" alt="Gallery-4" />
+            <div class="flip-card col-lg-4 col-md-12 p-1 mb-lg-0">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="images/Gallery/Gallery-3.webp" class="w-100 shadow-1-strong rounded mb-2"
+                            alt="Gallery-3" />
+                    </div>
+                    <div class="flip-card-back">
+                        <img src="images/Gallery/Gallery-4.webp" class="w-100 shadow-1-strong rounded mb-2"
+                            alt="Gallery-4" />
+                    </div>
+                </div>
             </div>
 
-            <div class="col-lg-4  p-1 mb-lg-0">
-                <img src="images/Gallery/Gallery-5.webp" class="w-100 shadow-1-strong rounded mb-2" alt="Gallery-5" />
-
-                <img src="images/Gallery/Gallery-6.webp" class="w-100 shadow-1-strong rounded mb-2" alt="Gallery-6" />
+            <div class="flip-card col-lg-4 col-md-12 p-1 mb-lg-0">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="images/Gallery/Gallery-5.webp" class="w-100 shadow-1-strong rounded mb-2"
+                            alt="Gallery-5" />
+                    </div>
+                    <div class="flip-card-back">
+                        <img src="images/Gallery/Gallery-6.webp" class="w-100 shadow-1-strong rounded mb-2"
+                            alt="Gallery-6" />
+                    </div>
+                </div>
             </div>
 
-            <div class="col-lg-4 col-md-12 p-1  mb-lg-0">
-                <img src="images/Gallery/Gallery-7.webp" class="w-100 shadow-1-strong rounded mb-2" alt="Gallery-7" />
-
-                <img src="images/Gallery/Gallery-8.webp" class="w-100 shadow-1-strong rounded mb-2" alt="Gallery-8" />
+            <div class="flip-card col-lg-4 col-md-12 p-1 mb-lg-0">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="images/Gallery/Gallery-7.webp" class="w-100 shadow-1-strong rounded mb-2"
+                            alt="Gallery-7" />
+                    </div>
+                    <div class="flip-card-back">
+                        <img src="images/Gallery/Gallery-8.webp" class="w-100 shadow-1-strong rounded mb-2"
+                            alt="Gallery-8" />
+                    </div>
+                </div>
             </div>
 
-            <div class="col-lg-4 mb-4 p-1 mb-lg-0">
-                <img src="images/Gallery/Gallery-9.webp" class="w-100 shadow-1-strong rounded mb-2" alt="Gallery-9" />
-
-                <img src="images/Gallery/Gallery-10.webp" class="w-100 shadow-1-strong rounded mb-2" alt="Gallery-10" />
+            <div class="flip-card col-lg-4 col-md-12 p-1 mb-lg-0">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="images/Gallery/Gallery-9.webp" class="w-100 shadow-1-strong rounded mb-2"
+                            alt="Gallery-9" />
+                    </div>
+                    <div class="flip-card-back">
+                        <img src="images/Gallery/Gallery-10.webp" class="w-100 shadow-1-strong rounded mb-2"
+                            alt="Gallery-10" />
+                    </div>
+                </div>
             </div>
 
-            <div class="col-lg-4 mb-4 p-1 mb-lg-0">
-                <img src="images/Gallery/Gallery-11.webp" class="w-100 shadow-1-strong rounded mb-2" alt="Gallery-11" />
-
-                <img src="images/Gallery/Gallery-12.webp" class="w-100 shadow-1-strong rounded mb-2" alt="Gallery-12" />
+            <div class="flip-card col-lg-4 col-md-12 p-1 mb-lg-0">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="images/Gallery/Gallery-11.webp" class="w-100 shadow-1-strong rounded mb-2"
+                            alt="Gallery-11" />
+                    </div>
+                    <div class="flip-card-back">
+                        <img src="images/Gallery/Gallery-12.webp" class="w-100 shadow-1-strong rounded mb-2"
+                            alt="Gallery-12" />
+                    </div>
+                </div>
             </div>
-
         </div>
 
 
