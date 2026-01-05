@@ -54,6 +54,7 @@ body {
     background-color: #0056b3;
     border-color: #0056b3;
     color: #fff;
+    
 }
 
 
@@ -68,12 +69,11 @@ li {
     flex-wrap: wrap;
     padding: 0;
 }
-
 .flip-card {
     background-color: transparent;
     width: 100%;
     height: 300px;
-    perspective: 1000px;
+    perspective: 1000px; /* enables 3D effect */
     margin-bottom: 20px;
 }
 
@@ -83,9 +83,8 @@ li {
     height: 100%;
     transition: transform 0.8s;
     transform-style: preserve-3d;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     border-radius: 15px;
-
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
 
 .flip-card:hover .flip-card-inner {
@@ -96,7 +95,7 @@ li {
 .flip-card-back {
     position: absolute;
     width: 100%;
-    height: 100%;
+    height: inherit;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     display: flex;
@@ -104,6 +103,12 @@ li {
     justify-content: center;
     border-radius: 15px;
     overflow: hidden;
+}
+
+
+
+.flip-card-back {
+    transform: rotateY(180deg); /* critical for showing back image */
 }
 
 .flip-card-front img,
