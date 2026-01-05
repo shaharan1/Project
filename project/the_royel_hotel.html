@@ -14,6 +14,10 @@
 
     <title>THE ROYAL HOTEL </title>
     <link rel="shortcut icon" href="images/letter_logo-removebg-preview.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 </head>
@@ -21,37 +25,31 @@
 <body data-bs-spy="scroll" data-bs-target=".navBar" data-bs-offset="100">
     <!-- Navbar -->
     <header>
-        <nav class="navbar glass-nav navbar-expand-lg navbar-light  fixed-top container">
-            <div class="me-auto p-2 bd-highlight"></div>
-            <div class="container-fluid">
+        <nav class="navbar glass-nav navbar-expand-lg navbar-light fixed-top">
+            <div class="container">
                 <a class="navbar-brand" href="#home">
-                    <img src="images/logo-removebg-preview.png" width="10%" alt="Logo">
+                    <img src="images/logo-removebg-preview.png" alt="Logo" class="logo">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse d-flex justify-content-between" id="navbarNav">
-                    <ul class="navbar-nav f-flex">
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mx-auto">
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="#home"><strong>Home</strong></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#rooms"><strong>Rooms</strong></a>
+                            <a class="nav-link" aria-current="page" href="#home">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#services"><strong>Services</strong></a>
-                        </li>
-                        <li class="nav-item  ">
-                            <a class="nav-link" href="#gallery"><strong>Gallery</strong></a>
+                            <a class="nav-link" href="#rooms">Rooms</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link main-btn btn rounded-pill" href="#booknow"><strong>Book
-                                    Now</strong></a>
+                            <a class="nav-link" href="#services">Services</a>
                         </li>
-
-
+                        <li class="nav-item">
+                            <a class="nav-link" href="#gallery">Gallery</a>
+                        </li>
                     </ul>
+                    <a class="main-btn btn rounded-pill" href="#booknow">Book Now</a>
                 </div>
             </div>
         </nav>
@@ -114,7 +112,7 @@
             <div class="row p-3 d-flex justify-content-center">
                 <div class="col-md-4 d-block">
 
-                    <a target="_blank" class="nav-link" href="roomDatils.html#classicRoom">
+                    <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#classicRoomModal">
                         <h3 class="text-center"> <strong>Classic Room</strong></h3>
                     </a>
 
@@ -145,7 +143,7 @@
 
                 <div class="col-md-4 d-block">
 
-                    <a target="_blank" class="nav-link" href="roomDatils.html#deluxeRoom-SeaView">
+                    <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#deluxeRoomSeaViewModal">
                         <h3 class="text-center"><strong>Deluxe Room,Sea View</strong> </h3>
                     </a>
 
@@ -177,7 +175,7 @@
 
                 <div class="col-md-4 d-block">
 
-                    <a target="_blank" class="nav-link" href="roomDatils.html#premiumRoom">
+                    <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#premiumRoomModal">
                         <h3 class="text-center"> <strong>Premium Room</strong></h3>
                     </a>
 
@@ -216,7 +214,7 @@
             <div class="row p-3 d-flex justify-content-center">
                 <div class="col-md-4 d-block">
 
-                    <a target="_blank" class="nav-link" href="roomDatils.html#deluxeSuite">
+                    <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#deluxeSuiteModal">
                         <h3 class="text-center"> <strong>Deluxe Suite</strong></h3>
                     </a>
 
@@ -248,7 +246,7 @@
 
                 <div class="col-md-4 d-block">
 
-                    <a target="_blank" class="nav-link" href="roomDatils.html#royalDoubleRoom">
+                    <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#royalDoubleRoomModal">
                         <h3 class="text-center"> <strong>Royal Double Room</strong></h3>
                     </a>
 
@@ -281,7 +279,7 @@
 
                 <div class="col-md-4 d-block">
 
-                    <a target="_blank" class="nav-link" href="roomDatils.html#crownSuite">
+                    <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#crownSuiteModal">
                         <h3 class="text-center"> <strong>Crown Suite</strong></h3>
                     </a>
 
@@ -312,7 +310,6 @@
                 </div>
             </div>
         </div>
-
     </section>
     <!-- Rooms End -->
 
@@ -406,7 +403,7 @@
 
         <div class="row-img container ">
 
-            <div class="flip-card col-lg-4 col-md-12 p-1 mb-lg-0">
+            <div class="flip-card col-lg-4 col-md-6 p-1 mb-lg-0">
                 <div class="flip-card-inner">
                     <div class="flip-card-front">
                         <img src="images/Gallery/Gallery-1.webp" class="w-100 shadow-1-strong rounded mb-2"
@@ -419,7 +416,7 @@
                 </div>
             </div>
 
-            <div class="flip-card col-lg-4 col-md-12 p-1 mb-lg-0">
+            <div class="flip-card col-lg-4 col-md-6 p-1 mb-lg-0">
                 <div class="flip-card-inner">
                     <div class="flip-card-front">
                         <img src="images/Gallery/Gallery-3.webp" class="w-100 shadow-1-strong rounded mb-2"
@@ -432,7 +429,7 @@
                 </div>
             </div>
 
-            <div class="flip-card col-lg-4 col-md-12 p-1 mb-lg-0">
+            <div class="flip-card col-lg-4 col-md-6 p-1 mb-lg-0">
                 <div class="flip-card-inner">
                     <div class="flip-card-front">
                         <img src="images/Gallery/Gallery-5.webp" class="w-100 shadow-1-strong rounded mb-2"
@@ -445,7 +442,7 @@
                 </div>
             </div>
 
-            <div class="flip-card col-lg-4 col-md-12 p-1 mb-lg-0">
+            <div class="flip-card col-lg-4 col-md-6 p-1 mb-lg-0">
                 <div class="flip-card-inner">
                     <div class="flip-card-front">
                         <img src="images/Gallery/Gallery-7.webp" class="w-100 shadow-1-strong rounded mb-2"
@@ -458,7 +455,7 @@
                 </div>
             </div>
 
-            <div class="flip-card col-lg-4 col-md-12 p-1 mb-lg-0">
+            <div class="flip-card col-lg-4 col-md-6 p-1 mb-lg-0">
                 <div class="flip-card-inner">
                     <div class="flip-card-front">
                         <img src="images/Gallery/Gallery-9.webp" class="w-100 shadow-1-strong rounded mb-2"
@@ -471,7 +468,7 @@
                 </div>
             </div>
 
-            <div class="flip-card col-lg-4 col-md-12 p-1 mb-lg-0">
+            <div class="flip-card col-lg-4 col-md-6 p-1 mb-lg-0">
                 <div class="flip-card-inner">
                     <div class="flip-card-front">
                         <img src="images/Gallery/Gallery-11.webp" class="w-100 shadow-1-strong rounded mb-2"
@@ -490,6 +487,211 @@
     </section>
     <!-- Gallery End -->
 
+    <div id="room-modals">
+    <!-- Classic Room Modal -->
+    <div class="modal fade" id="classicRoomModal" tabindex="-1" aria-labelledby="classicRoomModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="classicRoomModalLabel">Classic Room</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <h5 class="text-center"> <strong>Room Size:</strong> 35 sq. m.-40 sq.m.</h5>
+            <h6 class="text-center"><i class="fa-solid fa-bed"></i> 2 Single Beds, or 1 King Bed </h6>
+            <ul>
+                <li class="text-center"><i class="fa-solid fa-tv"></i> TV</li>
+                <li class="text-center"><i class="fa-solid fa-box"></i> Wardrobe</li>
+                <li class="text-center"><i class="fa-solid fa-ban-smoking"></i> Non-smoking</li>
+                <li class="text-center"><i class="fa-solid fa-fan"></i> Air conditioning</li>
+                <li class="text-center"><i class="fa-solid fa-broom"></i> Daily housekeeping</li>
+            </ul>
+            <div class="row p-3 d-flex justify-content-center ">
+                <div class="col-md-4">
+                    <img src="images/Rooms/rooms 1.webp" class="w-100">
+                </div>
+                <div class="col-md-4">
+                    <img src="images/Rooms/rooms2.webp" class="w-100">
+                </div>
+                <div class="col-md-4">
+                    <img src="images/Rooms/rooms 3.webp" class="w-100">
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Deluxe Room Sea View Modal -->
+    <div class="modal fade" id="deluxeRoomSeaViewModal" tabindex="-1" aria-labelledby="deluxeRoomSeaViewModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="deluxeRoomSeaViewModalLabel">Deluxe Room, Sea View</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h5 class="text-center"><strong>Room Size:</strong> 145 sq. m. – 145 sq. m.</h5>
+                    <h6 class="text-center"><i class="fa-solid fa-bed"></i> 1 Queen bed and 1 Sofa bed</h6>
+                    <ul>
+                        <li class="text-center"><i class="fa-solid fa-tv"></i> TV</li>
+                        <li class="text-center"><i class="fa-solid fa-box"></i> Wardrobe</li>
+                        <li class="text-center"><i class="fa-solid fa-ban-smoking"></i> Non-smoking</li>
+                        <li class="text-center"><i class="fa-solid fa-fan"></i> Air conditioning</li>
+                        <li class="text-center"><i class="fa-solid fa-broom"></i> Daily housekeeping</li>
+                    </ul>
+                    <div class="row p-3 d-flex justify-content-center">
+                        <div class="col-md-4">
+                            <img src="images/Rooms/rooms 4.webp" class="w-100">
+                        </div>
+                        <div class="col-md-4">
+                            <img src="images/Rooms/rooms 5.webp" class="w-100">
+                        </div>
+                        <div class="col-md-4">
+                            <img src="images/Rooms/rooms 6.webp" class="w-100">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Premium Room Modal -->
+    <div class="modal fade" id="premiumRoomModal" tabindex="-1" aria-labelledby="premiumRoomModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="premiumRoomModalLabel">Premium Room</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h5 class="text-center"><strong>Room Size:</strong> 55 sq. m. – 55 sq. m.</h5>
+                    <h6 class="text-center"><i class="fa-solid fa-bed"></i> 1 King Bed and 1 Sofa bed</h6>
+                    <ul>
+                        <li class="text-center"><i class="fa-solid fa-tv"></i> TV</li>
+                        <li class="text-center"><i class="fa-solid fa-box"></i> Wardrobe</li>
+                        <li class="text-center"><i class="fa-solid fa-ban-smoking"></i> Non-smoking</li>
+                        <li class="text-center"><i class="fa-solid fa-fan"></i> Air conditioning</li>
+                        <li class="text-center"><i class="fa-solid fa-broom"></i> Daily housekeeping</li>
+                    </ul>
+                    <div class="row p-3 d-flex justify-content-center">
+                        <div class="col-md-4">
+                            <img src="images/Rooms/rooms 7.webp" class="w-100">
+                        </div>
+                        <div class="col-md-4">
+                            <img src="images/Rooms/rooms 8.webp" class="w-100">
+                        </div>
+                        <div class="col-md-4">
+                            <img src="images/Rooms/rooms 9.webp" class="w-100">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Deluxe Suite Modal -->
+    <div class="modal fade" id="deluxeSuiteModal" tabindex="-1" aria-labelledby="deluxeSuiteModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="deluxeSuiteModalLabel">Deluxe Suite</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h5 class="text-center"><strong>Room Size:</strong> 35 sq. m.-40 sq.m.</h5>
+                    <h6 class="text-center"><i class="fa-solid fa-bed"></i> 1 King Bed</h6>
+                    <ul>
+                        <li class="text-center"><i class="fa-solid fa-tv"></i> TV</li>
+                        <li class="text-center"><i class="fa-solid fa-box"></i> Wardrobe</li>
+                        <li class="text-center"><i class="fa-solid fa-ban-smoking"></i> Non-smoking</li>
+                        <li class="text-center"><i class="fa-solid fa-fan"></i> Air conditioning</li>
+                        <li class="text-center"><i class="fa-solid fa-broom"></i> Daily housekeeping</li>
+                    </ul>
+                    <div class="row p-3 d-flex justify-content-center">
+                        <div class="col-md-4">
+                            <img src="images/Rooms/rooms-10.webp" class="w-100">
+                        </div>
+                        <div class="col-md-4">
+                            <img src="images/Rooms/rooms-11.webp" class="w-100">
+                        </div>
+                        <div class="col-md-4">
+                            <img src="images/Rooms/rooms-12.webp" class="w-100">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Royal Double Room Modal -->
+    <div class="modal fade" id="royalDoubleRoomModal" tabindex="-1" aria-labelledby="royalDoubleRoomModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="royalDoubleRoomModalLabel">Royal Double Room</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h5 class="text-center"><strong>Room Size:</strong> 145 sq. m. – 145 sq. m.</h5>
+                    <h6 class="text-center"><i class="fa-solid fa-bed"></i> 2 Single bed or 1 Queen bed</h6>
+                    <ul>
+                        <li class="text-center"><i class="fa-solid fa-tv"></i> TV</li>
+                        <li class="text-center"><i class="fa-solid fa-box"></i> Wardrobe</li>
+                        <li class="text-center"><i class="fa-solid fa-ban-smoking"></i> Non-smoking</li>
+                        <li class="text-center"><i class="fa-solid fa-fan"></i> Air conditioning</li>
+                        <li class="text-center"><i class="fa-solid fa-broom"></i> Daily housekeeping</li>
+                    </ul>
+                    <div class="row p-3 d-flex justify-content-center">
+                        <div class="col-md-4">
+                            <img src="images/Rooms/rooms-14.webp" class="w-100">
+                        </div>
+                        <div class="col-md-4">
+                            <img src="images/Rooms/rooms-15.webp" class="w-100">
+                        </div>
+                        <div class="col-md-4">
+                            <img src="images/Rooms/rooms-16.webp" class="w-100">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Crown Suite Modal -->
+    <div class="modal fade" id="crownSuiteModal" tabindex="-1" aria-labelledby="crownSuiteModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="crownSuiteModalLabel">Crown Suite</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h5 class="text-center"><strong>Room Size:</strong> 55 sq. m. – 55 sq. m.</h5>
+                    <h6 class="text-center"><i class="fa-solid fa-bed"></i> 1 King Bed</h6>
+                    <ul>
+                        <li class="text-center"><i class="fa-solid fa-tv"></i> TV</li>
+                        <li class="text-center"><i class="fa-solid fa-box"></i> Wardrobe</li>
+                        <li class="text-center"><i class="fa-solid fa-ban-smoking"></i> Non-smoking</li>
+                        <li class="text-center"><i class="fa-solid fa-fan"></i> Air conditioning</li>
+                        <li class="text-center"><i class="fa-solid fa-broom"></i> Daily housekeeping</li>
+                    </ul>
+                    <div class="row p-3 d-flex justify-content-center">
+                        <div class="col-md-4">
+                            <img src="images/Rooms/rooms-17.webp" class="w-100">
+                        </div>
+                        <div class="col-md-4">
+                            <img src="images/Rooms/rooms-18 (2).webp" class="w-100">
+                        </div>
+                        <div class="col-md-4">
+                            <img src="images/Rooms/rooms-19.webp" class="w-100">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
     <!-- Footer -->
     <footer class="bg-dark text-white pt-4 px-5">
         <div class="row d-flex justify-content-between align-items-start g-4">
